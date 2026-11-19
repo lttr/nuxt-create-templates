@@ -10,7 +10,7 @@ vp create @lttr:nuxt-ui-db   # the same, plus SQLite + Drizzle as a Nuxt layer
 
 ## How it works
 
-`package.json` lists the templates under `createConfig.templates`. Each one is a folder in `templates/`, and `vp create` copies it as-is: no placeholders, no prompts. After creating an app, check `name` in its `package.json` (the templates ship `nuxt-template`) and the title in its README.
+`package.json` lists the templates under `createConfig.templates`. Each one is a folder in `templates/`, and `vp create` copies it as-is: no placeholders, no prompts. `vp create` sets `name` in `package.json` to the target folder; the README title still says "Nuxt template".
 
 Both templates are generated from [lttr/nuxt-template](https://github.com/lttr/nuxt-template). Don't edit `templates/` by hand.
 
